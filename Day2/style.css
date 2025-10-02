@@ -1,0 +1,22 @@
+.container{
+    width: 50%;
+    height: 50vh;
+    background-color: chocolate;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px ;
+}
+.image{
+    width : 150px;
+    height: 200px;
+}
+
+h1{
+    color: rgb(223, 223, 39);
+}
+.description{
+    font-size : 20px;
+    color : white;
+
+}
