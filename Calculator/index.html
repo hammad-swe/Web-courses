@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="min-h-screen flex items-center justify-center bg-gray-100">
+        <div class="bg-white p-8 rounded shadow-md w-80">
+            <h1 class="text-2xl font-bold mb-4 text-center">Calculator</h1>
+            <input type="text" id="display" class="w-full p-2 mb-4 border rounded text-right text-xl" readonly>
+            <div class="grid grid-cols-4 gap-2">
+                <button class="p-4 bg-gray-200 rounded" onclick="appendToDisplay('7')">7</button>
+                <button class="p-4 bg-gray-200 rounded" onclick="appendToDisplay('8')">8</button>
+                <button class="p-4 bg-gray-200 rounded" onclick="appendToDisplay('9')">9</button>
+                <button class="p-4 bg-yellow-400 rounded" onclick="appendToDisplay('/')">/</button>
+
+                <button class="p-4 bg-gray-200 rounded" onclick="appendToDisplay('4')">4</button>
+                <button class="p-4 bg-gray-200 rounded" onclick="appendToDisplay('5')">5</button>
+                <button class="p-4 bg-gray-200 rounded" onclick="appendToDisplay('6')">6</button>
+                <button class="p-4 bg-yellow-400 rounded" onclick="appendToDisplay('*')">*</button>
+
+                <button class="p-4 bg-gray-200 rounded" onclick="appendToDisplay('1')">1</button>
+                <button class="p-4 bg-gray-200 rounded" onclick="appendToDisplay('2')">2</button>
+                <button class="p-4 bg-gray-200 rounded" onclick="appendToDisplay('3')">3</button>
+                <button class="p-4 bg-yellow-400 rounded" onclick="appendToDisplay('-')">-</button>
+
+                <button class="p-4 bg-gray-200 rounded" onclick="clearDisplay()">C</button>
+                <button class="p-4 bg-gray-200 rounded" onclick="appendToDisplay('0')">0</button>
+                <button class="p-4 bg-green-400 rounded" onclick="calculateResult()">=</button>
+                
+                <button class="p-4 bg-yellow-400 rounded" onclick="appendToDisplay('+')">+</button>
+
+                </div>
+                </div>
+                </div>
+    <script src="script.js">
+    </script>
+</body>
+
+
+</html>
