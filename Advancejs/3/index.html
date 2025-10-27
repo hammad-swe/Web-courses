@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Events</title>
+    <style>
+#clickButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>JavaScript Events</h1>
+        <p >JavaScript events are actions that occur in the browser, such as clicks, mouse movements, key presses, and more. Events allow you to execute code in response to user interactions or other occurrences.</p>
+        <button id="clickButton" onclick="hideShow()">hide/show</button>
+    </div>
+
+    <script>
+        // Example of a click event
+        // document.addEventListener('click', function() {
+        //     alert('The document was clicked!');
+        // });
+
+        // Example of a mouseover event
+        // document.addEventListener('mouseover', function() {
+        //     alert('Mouse is over the document!');
+        // });
+
+        // Example of a keydown event
+        // document.addEventListener('keydown', function(event) {
+        //     alert('Key pressed: ' + event.key);
+        // });
+    
+
+        //hide paragraph on button click
+        const button = document.getElementById('clickButton');
+        const paragraph = document.querySelector('p');
+        
+
+        function hideShow() {
+            if (paragraph.style.display === 'none') {
+                paragraph.style.display = 'block';
+            } else {
+                paragraph.style.display = 'none';
+            }
+        }
+        //mouseover event to change button color
+        button.addEventListener('mouseover', function() {
+            button.style.backgroundColor = 'darkorange';
+        });
+
+        button.addEventListener('mouseout', function() {
+            button.style.backgroundColor = 'brown';
+        });
+
+    </script>
+</body>
+</html>

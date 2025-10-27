@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settimeinterval and events and time</title>
+</head>
+<body>
+<h1>SetInterval and Events</h1>
+<p>This is an example of using setInterval and event handling in JavaScript.</p>
+
+<script>
+
+    function greet(name, byeText){
+        console.log("Hello Good Morning " + name + " " + byeText);
+
+    }
+
+    const intervalId = setInterval(() => {
+        greet("Alice", "Have a great day!");
+    }, 2000);
+    // To stop the interval after some time, you can use clearInterval
+    // const timeoutId = setTimeout(() => {
+    //     greet("John", "See you later!");
+    // }, 10000);
+
+    // clearTimeout(timeoutId);
+
+
+</script>
+</body>
+</html>
